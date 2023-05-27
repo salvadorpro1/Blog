@@ -1,0 +1,194 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  top: 0;
+  position: sticky;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav__logoLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__menu-item {
+  margin-right: 10px;
+}
+
+.nav__menu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav__menu-link:hover {
+  background-color: #444;
+}
+
+/* Estilos de las secciones */
+.hero-section {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero-section__title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-section__description {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projects-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.projects-section__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projects-section__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-card__title {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-card__description {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.project-card__link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-card__link:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de la sección Acerca de Mí */
+.about-section {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-section__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-section__description {
+  color: #777;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-height: 300px;
+  border-radius: 10%;
+
+  /* Ajusta el valor según tus necesidades */
+}
+
+/* Estilos de la sección de Contacto */
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-section__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Estilos del pie de página */
+.footer {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
