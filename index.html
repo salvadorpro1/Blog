@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,20 +18,32 @@
     <header class="header">
       <nav class="nav">
         <div class="nav__logo">
-          <a class="nav__logoLink" href="#">Mi Blog</a>
+          <a class="nav__logoLink" href="./index.html">Mi Blog</a>
         </div>
+        <input type="checkbox" id="nav-toggle" class="nav__toggle-checkbox" />
+        <label for="nav-toggle" class="nav__toggle-label">
+          <span class="nav__toggle-icon"></span>
+        </label>
         <ul class="nav__menu">
           <li class="nav__menu-item">
-            <a href="#" class="nav__menu-link">Inicio</a>
+            <a href="./index.html" class="nav__menu-link">Inicio</a>
           </li>
           <li class="nav__menu-item">
-            <a href="#" class="nav__menu-link">Proyectos</a>
+            <a href="./Proyectos.html" class="nav__menu-link">Proyectos</a>
           </li>
           <li class="nav__menu-item">
-            <a href="#" class="nav__menu-link">Acerca de mí</a>
+            <a href="./aboutMe.html" class="nav__menu-link">Acerca de mí</a>
           </li>
           <li class="nav__menu-item">
-            <a href="#" class="nav__menu-link">Contacto</a>
+            <a href="#Contact" class="nav__menu-link">Contacto</a>
+          </li>
+          <li class="nav__menu-item">
+            <a
+              href="./pdf/CvmodernoSinNumero.pdf"
+              target="_blank"
+              class="nav__menu-link"
+              >CV</a
+            >
           </li>
         </ul>
       </nav>
@@ -79,8 +91,6 @@
             </p>
             <a href="#" class="project-card__link">Ver más</a>
           </div>
-
-          <!-- Agrega más tarjetas de proyectos según sea necesario -->
         </div>
       </div>
     </section>
@@ -105,20 +115,20 @@
             centrado en la experiencia del usuario y la entrega de resultados
             sobresalientes. Estoy buscando oportunidades para aplicar mis
             habilidades en soporte técnico y desarrollo web, colaborando en
-            equipos dinámicos y contribuyendo al éxito de proyectos desafiantes.
-            Soy apasionado por aprender y adaptarme a nuevas tecnologías, y
-            estoy comprometido con la excelencia y la satisfacción del cliente.
-            ¡Estoy emocionado por formar parte de un equipo dinámico y
-            contribuir con mi experiencia en soporte técnico y desarrollo web
-            para lograr resultados excepcionales! para conocerme mas hacer click
-            ==>
-            <a href="">aquí</a>
+            equipos dinámicos y contribuyendo al éxito de proyectos desafiantes
+            propios. Soy apasionado por aprender y adaptarme a nuevas
+            tecnologías, y estoy comprometido con la excelencia y la
+            satisfacción del cliente. ¡Estoy emocionado por formar parte de un
+            equipo dinámico y contribuir con mi experiencia en soporte técnico y
+            desarrollo web para lograr resultados excepcionales! para conocerme
+            más hacer click ==>
+            <a href="./aboutMe.html">aquí</a>
           </p>
         </div>
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section" id="Contact">
       <div class="container">
         <h2 class="contact-section__title">Contacto</h2>
         <p class="contact-section__description">

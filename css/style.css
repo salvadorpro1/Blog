@@ -36,6 +36,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.nav__toggle-checkbox {
+  visibility: hidden;
+}
+
 .nav__logoLink {
   text-decoration: none;
   color: #fff;
@@ -79,7 +83,7 @@ body {
 
 .hero-section__description {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -99,8 +103,9 @@ body {
 
 .projects-section__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 293px));
   gap: 20px;
+  justify-content: center;
 }
 
 .project-card {
@@ -165,8 +170,13 @@ body {
   margin-bottom: 20px;
   max-height: 300px;
   border-radius: 10%;
+}
 
-  /* Ajusta el valor según tus necesidades */
+.about-section__content-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0 20px;
 }
 
 /* Estilos de la sección de Contacto */
@@ -184,11 +194,163 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.contact-section__description {
+  color: #777;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.contact-section__description a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-section__description a:hover {
+  text-decoration: underline;
+}
+
 /* Estilos del pie de página */
 .footer {
-  background-color: #1f1f1f;
+  background-color: #000;
+  color: #fff;
   padding: 20px;
   text-align: center;
   font-size: 14px;
-  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer__text {
+  margin-bottom: 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 720px) {
+  .container {
+    padding: 10px;
+  }
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__toggle-label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .nav__toggle-icon,
+  .nav__toggle-icon::before,
+  .nav__toggle-icon::after {
+    background-color: #fff;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+  }
+
+  .nav__toggle-icon {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav__toggle-icon::before,
+  .nav__toggle-icon::after {
+    content: "";
+    display: block;
+  }
+
+  .nav__toggle-icon::before {
+    top: -8px;
+  }
+
+  .nav__toggle-icon::after {
+    top: 8px;
+  }
+
+  .nav__toggle-checkbox:checked ~ .nav__menu {
+    display: block;
+  }
+
+  .nav__toggle-checkbox:checked ~ .nav__toggle-label .nav__toggle-icon {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .nav__toggle-checkbox:checked ~ .nav__toggle-label .nav__toggle-icon::before {
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .nav__toggle-checkbox:checked ~ .nav__toggle-label .nav__toggle-icon::after {
+    transform: translateY(0) rotate(90deg);
+  }
+
+  .nav__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav__menu-item {
+    margin-bottom: 10px;
+  }
+
+  .nav__menu-link {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav__menu-link:hover {
+    text-decoration: underline;
+  }
+
+  .hero-section__title {
+    font-size: 24px;
+  }
+
+  .hero-section__description {
+    font-size: 16px;
+  }
+
+  .projects-section__title {
+    font-size: 20px;
+  }
+
+  .project-card__title {
+    font-size: 18px;
+  }
+
+  .project-card__description {
+    font-size: 14px;
+  }
+
+  .about-section__title {
+    font-size: 20px;
+  }
+
+  .about-section__description {
+    font-size: 14px;
+  }
+
+  .contact-section__title {
+    font-size: 20px;
+  }
+
+  .contact-section__description {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
 }
