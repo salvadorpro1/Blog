@@ -1,42 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyectos</title>
-    <link rel="stylesheet" href="./" />
-    <style></style>
+    <title>WebfolioChronicles: Un Viaje Personal en el Desarrollo Web</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/blog.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <header>
-      <h1 class="projects-page__title">Proyectos</h1>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a class="nav__logoLink" href="./index.html">Mi Blog</a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav__toggle-checkbox" />
+        <label for="nav-toggle" class="nav__toggle-label">
+          <span class="nav__toggle-icon"></span>
+        </label>
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="./index.html" class="nav__menu-link">Inicio</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="./Proyectos.html" class="nav__menu-link">Proyectos</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="./aboutMe.html" class="nav__menu-link">Acerca de mí</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="./index.html#Contact" class="nav__menu-link">Contacto</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="./skills.html" class="nav__menu-link">Skills</a>
+          </li>
+          <li class="nav__menu-item">
+            <a
+              href="./pdf/CvmodernoSinNumero.pdf"
+              target="_blank"
+              class="nav__menu-link"
+              >CV</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
+    <main>
+      <section class="projects-section">
+        <div class="container">
+          <h2 class="projects-section__title">Todos Mis Proyectos</h2>
+          <div class="projects-section__list">
+            <div class="project-card">
+              <img
+                src="https://fondosmil.com/fondo/67354.jpg"
+                alt="Proyecto 1"
+              />
+              <h3 class="project-card__title">Proyecto 1</h3>
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                gravida tristique risus eu tincidunt.
+              </p>
+              <a href="#" class="project-card__link">Ver más</a>
+            </div>
 
-    <div class="container">
-      <section class="project-section">
-        <h2 class="project-section__title">Proyecto 1</h2>
-        <p class="project-section__description">Descripción del Proyecto 1</p>
-        <a href="#" class="project-section__link">Ver más</a>
+            <div class="project-card">
+              <img
+                src="https://fondosmil.com/fondo/67354.jpg"
+                alt="Proyecto 2"
+              />
+              <h3 class="project-card__title">Proyecto 2</h3>
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                gravida tristique risus eu tincidunt.
+              </p>
+              <a href="#" class="project-card__link">Ver más</a>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="https://fondosmil.com/fondo/67354.jpg"
+                alt="Proyecto 3"
+              />
+              <h3 class="project-card__title">Proyecto 3</h3>
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                gravida tristique risus eu tincidunt.
+              </p>
+              <a href="#" class="project-card__link">Ver más</a>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="https://fondosmil.com/fondo/67354.jpg"
+                alt="Proyecto 4"
+              />
+              <h3 class="project-card__title">Proyecto 4</h3>
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                gravida tristique risus eu tincidunt.
+              </p>
+              <a href="#" class="project-card__link">Ver más</a>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="https://fondosmil.com/fondo/67354.jpg"
+                alt="Proyecto 5"
+              />
+              <h3 class="project-card__title">Proyecto 5</h3>
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                gravida tristique risus eu tincidunt.
+              </p>
+              <a href="#" class="project-card__link">Ver más</a>
+            </div>
+
+            <div class="project-card">
+              <img
+                src="https://fondosmil.com/fondo/67354.jpg"
+                alt="Proyecto 6"
+              />
+              <h3 class="project-card__title">Proyecto 6</h3>
+              <p class="project-card__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                gravida tristique risus eu tincidunt.
+              </p>
+              <a href="#" class="project-card__link">Ver más</a>
+            </div>
+          </div>
+        </div>
       </section>
-
-      <section class="project-section">
-        <h2 class="project-section__title">Proyecto 2</h2>
-        <p class="project-section__description">Descripción del Proyecto 2</p>
-        <a href="#" class="project-section__link">Ver más</a>
-      </section>
-
-      <section class="project-section">
-        <h2 class="project-section__title">Proyecto 3</h2>
-        <p class="project-section__description">Descripción del Proyecto 3</p>
-        <a href="#" class="project-section__link">Ver más</a>
-      </section>
-    </div>
-
-    <footer>
-      <p class="footer__copyright">
-        © 2023 Salvador Sanchez | Todos los derechos reservados
-      </p>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          Derechos de autor &copy; 2023 Mi Blog. Todos los derechos reservados.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
