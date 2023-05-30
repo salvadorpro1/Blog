@@ -1,0 +1,168 @@
+:root {
+  --verde: #48cfad;
+  --gris: #e6e9ed;
+  --linea: #878992;
+  --negro: #22272d;
+  --combinacion:linear-gradient(90deg, rgba(6,6,64,1) 0%, rgba(3,64,26,1) 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-index__nav {
+  background-color: var(--verde);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.header-index__ul {
+  list-style: none;
+  margin-right: 10px;
+  display: flex;
+}
+
+.header-index__linkedin {
+  color: white;
+  text-decoration: none;
+}
+
+.header-index__contenedor-logo {
+  width: 40%;
+  max-width: 200px;
+}
+
+.header-index__logo {
+  width: 100%;
+}
+
+.main-index__sobremi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gris);
+  min-height: 250px;
+  padding: 30px;
+}
+
+.main-index__pdemi {
+  padding-right: 5px;
+}
+
+.main-index__mi-imagen {
+  width: 100%;
+}
+
+.main-index__contenedor-mi-imagen {
+  width: 60%;
+  min-width: 247px;
+  max-width: 260px;
+}
+
+.main-index__minombre {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-index__container-text {
+  width: 50%;
+  min-width: 280px;
+  margin-left: 30px;
+  font-size: 1.4rem;
+}
+
+.main-index__cursos-contenedor {
+  width: 80%;
+  margin: auto;
+}
+
+.main-index__cursos-titulo {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid var(--linea);
+  padding-bottom: 10px;
+  margin-bottom: -41px;
+
+}
+
+.main-index__cursos-todos {
+  padding: 40px 0px;
+}
+
+.main-index__curso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  width: 250px;
+  background: var(--combinacion);
+  font-size: 1.4rem;
+  margin: 19px;
+  border: 2px solid #400906;
+  color: white;
+}
+
+.main-index__curso-imagen {
+  width: 90%;
+  padding-top: 20px;
+  object-fit: cover;
+  object-position: center;
+  height: 200px;
+}
+
+.main-index__nombre-curso {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  width: 90%;
+  font-weight: bolder;
+}
+
+.main-index__explica-curso {
+  margin-top: 10px;
+  width: 90%;
+  
+}
+
+.main-index__cursos-todos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-index{
+  background-color:var(--gris);
+  height: 100px;
+}
+
+.footer-index__contenedor-contacto{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-index__contacto-titulo{
+  text-decoration: underline;
+}
+
+.footer-index__imagen{
+  height: 80%;
+}
+.footer-index__correo-contenedor{
+  font-size: 1.6rem;
+}
+
+.imagen-git{
+height: 30px;
+margin-left: 10px;
+}
